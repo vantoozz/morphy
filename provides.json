@@ -1,11 +1,11 @@
 {
   "providers": [
-    "Vantoozz\Phpmorphy\PhpmorphyServiceProvider"
+    "Vantoozz\Morphy\MorphyServiceProvider"
   ],
   "aliases": [
     {
-      "alias": "Phpmorphy",
-      "facade": "Vantoozz\Phpmorphy\Facades\Phpmorphy"
+      "alias": "Morphy",
+      "facade": "Vantoozz\Morphy\Facades\Morphy"
     }
   ]
 }
