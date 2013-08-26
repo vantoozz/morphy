@@ -7,13 +7,17 @@ class Phpmorphy
     public static function instance()
     {
 
-    	if ( ! Phpmorphy::$singleton)
-    	{
+        if (!Phpmorphy::$singleton) {
 
-    		Phpmorphy::$singleton = new Phpmorphy();
+            Phpmorphy::$singleton = new Phpmorphy();
 
-    	}
+        }
 
-    	return Phpmorphy::$singleton;
+        return Phpmorphy::$singleton;
 
+    }
+
+    public static function normalize(){
+        return 'lalala';
+    }
 }

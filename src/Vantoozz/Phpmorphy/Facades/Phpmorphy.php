@@ -1,23 +1,13 @@
 <?php
 
-namespace Vantoozz\Phpmorphy;
+namespace Intervention\Image\Facades;
 
-class Phpmorphy
+use Illuminate\Support\Facades\Facade;
+
+class Phpmorphy extends Facade
 {
-    public static function instance()
+    protected static function getFacadeAccessor()
     {
-
-        if (!Phpmorphy::$singleton) {
-
-            Phpmorphy::$singleton = new Phpmorphy();
-
-        }
-
-        return Phpmorphy::$singleton;
-
-    }
-
-    public static function normalize(){
-        return 'lalala';
+        return 'phpmorphy';
     }
 }
