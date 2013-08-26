@@ -28,7 +28,9 @@ class PhpmorphyServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        $this->app['phpmorphy'] = $this->app->share(function($app) {
+            return new Phpmorphy;
+        });
 	}
 
 	/**
@@ -38,7 +40,7 @@ class PhpmorphyServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('phpmorphy');
 	}
 
 }

@@ -1,0 +1,11 @@
+{
+  "providers": [
+    "Vantoozz\Phpmorphy\PhpmorphyServiceProvider"
+  ],
+  "aliases": [
+    {
+      "alias": "Phpmorphy",
+      "facade": "Vantoozz\Phpmorphy\Facades\Phpmorphy"
+    }
+  ]
+}
