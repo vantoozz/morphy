@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class PhpmorphyServiceProvider extends ServiceProvider {
+class MorphyServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
