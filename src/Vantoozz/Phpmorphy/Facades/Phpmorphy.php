@@ -1,6 +1,6 @@
 <?php
 
-namespace Intervention\Image\Facades;
+namespace Vantoozz\Phpmorphy\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

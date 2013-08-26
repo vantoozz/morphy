@@ -4,6 +4,8 @@ namespace Vantoozz\Phpmorphy;
 
 class Phpmorphy
 {
+	protected static $singleton;
+	
     public static function instance()
     {
 
