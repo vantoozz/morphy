@@ -1,6 +1,6 @@
 {
     "name": "vantoozz/morphy",
-    "description": "http://phpmorphy.sourceforge.net/dokuwiki/",
+    "description": "",
     "authors": [
         {
             "name": "Ivan Nikitin",
@@ -8,14 +8,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
     },
     "autoload": {
         "classmap": [
             "vendor/phpmorphy/src/common.php"
         ],
         "psr-0": {
-            "Vantoozz\\Phpmorphy": "src/"
+            "Vantoozz\\Morphy": "src/"
         }
     },
     "minimum-stability": "dev"
