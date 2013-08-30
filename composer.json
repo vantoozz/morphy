@@ -15,6 +15,7 @@
         "classmap": [
             "vendor/php-censure/Text/Censure.php",
             "vendor/php-censure/ReflectionTypeHint.php",
+            "vendor/php-censure/UTF8.php",
             "vendor/phpmorphy/src/common.php"
         ],
         "psr-0": {
