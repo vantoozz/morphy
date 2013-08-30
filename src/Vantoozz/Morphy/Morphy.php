@@ -30,7 +30,7 @@ class Morphy
 
 
         if(!$obscene){
-            $obscene = !!\Text_Censure::parse(implode(' ', $text));
+            $obscene = !!\Text_Censure::parse(implode(' ', $text), 1, "", false);
         }
 
         return array('obscene'=>$obscene, 'text' => $text);
