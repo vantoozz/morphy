@@ -27,6 +27,12 @@ class Morphy
                 break;
             }
         }
+
+
+        if(!$obscene){
+            $obscene = !!\Text_Censure::parse(implode(' ', $text));
+        }
+
         return array('obscene'=>$obscene, 'text' => $text);
     }
 

@@ -13,6 +13,7 @@
     },
     "autoload": {
         "classmap": [
+            "vendor/php-censure/Text/Censure.php",
             "vendor/phpmorphy/src/common.php"
         ],
         "psr-0": {
