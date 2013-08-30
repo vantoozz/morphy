@@ -14,6 +14,7 @@
     "autoload": {
         "classmap": [
             "vendor/php-censure/Text/Censure.php",
+            "vendor/php-censure/Text/ReflectionTypeHint.php",
             "vendor/phpmorphy/src/common.php"
         ],
         "psr-0": {
