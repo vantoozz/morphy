@@ -82,12 +82,17 @@ class Morphy
 
         if (is_array($result)) {
             $stopwords = $this->stopwords();
-            foreach ($result as $word) {
+            foreach ($result as $source => $word) {
                 if (is_array($word)) {
                     foreach ($word as $form) {
                         if (!in_array($form, $stopwords)) {
                             $normal_text[$form] = $form;
                         }
+                    }
+                }
+                else{
+                    if (!in_array($source, $stopwords)) {
+                        $normal_text[$source] = $source;
                     }
                 }
             }
