@@ -37,9 +37,9 @@ class Morphy
         return $this;
     }
 
-    public function obscene($text)
+    public function obscene($text, $source_unless_normalized = false)
     {
-        $text = $this->normalize($text);
+        $text = $this->normalize($text, $source_unless_normalized);
         $obscene_words = $this->obscene_words();
         $obscene = false;
         foreach ($text as $word) {
@@ -57,7 +57,7 @@ class Morphy
         return array('obscene' => $obscene, 'text' => $text);
     }
 
-    public function normalize($text)
+    public function normalize($text, $source_unless_normalized = false)
     {
         $normal_text = array();
 
@@ -89,9 +89,8 @@ class Morphy
                             $normal_text[$form] = $form;
                         }
                     }
-                }
-                else{
-                    if (!in_array($source, $stopwords)) {
+                } else {
+                    if ($source_unless_normalized && !in_array($source, $stopwords)) {
                         $normal_text[$source] = $source;
                     }
                 }
